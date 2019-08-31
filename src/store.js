@@ -6,7 +6,6 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    user: {},
     clue: {},
     score: 0,
     count: 0,
