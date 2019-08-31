@@ -6,6 +6,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    user: {},
     clue: {},
     score: 0,
     count: 0,
@@ -19,7 +20,7 @@ export default new Vuex.Store({
   },
   actions: {
     getClue ({ commit }) {
-      Axios.get(`http://jservice.io/api/random?count=1`)
+      Axios.get(`https://jservice.io/api/random?count=1`)
         .then(response => {
           let temp = response.data[0]
           temp.answer = formatAnswer(temp.answer)
