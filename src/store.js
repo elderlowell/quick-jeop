@@ -19,7 +19,8 @@ export default new Vuex.Store({
   },
   actions: {
     getClue ({ commit }) {
-      Axios.get(`https://jservice.io/api/random?count=1`)
+      // Axios.get(`https://jservice.io/api/random?count=1`)
+      Axios.get(`https://api.jalowell.com/quiz`)
         .then(response => {
           let temp = response.data[0]
           temp.answer = formatAnswer(temp.answer)
