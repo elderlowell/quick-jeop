@@ -17,6 +17,10 @@ const router = new VueRouter({
         { path: '/profile', name: 'Profile', component: () => import('@/components/Profile.vue') },
         { path: '/login', name: 'Login', component: () => import('@/components/Login.vue') }
       ]
+    },
+    {
+      path: '*',
+      redirect: { name: 'Home' }
     }
   ]
 })
