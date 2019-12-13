@@ -13,7 +13,7 @@
     "bootstrap-vue": "^2.0.0-rc.19",
     "core-js": "^2.6.5",
     "jquery": "^3.4.0",
-    "npm": "^6.11.2",
+    "npm": "^6.13.4",
     "string-similarity": "^3.0.0",
     "vue": "^2.6.6",
     "vue-router": "^3.0.3",
